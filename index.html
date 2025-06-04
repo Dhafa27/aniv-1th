@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en"> 
- <head> 
+<head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Login Page</title> 
@@ -17,90 +17,84 @@
       justify-content: center;
       align-items: center;
       background-image: url('IMG-20250416-WA0004.jpg');
-    }.login-container {
-  background-color: rgba(225,225,226,0.3);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  max-width: 400px;
-}
-
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #333;
-}
-
-.login-container input[type="text"],
-.login-container input[type="password"] {
-  width: 100%;
-  padding: 14px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-.password-container {
-  position: relative;
-}
-
-.toggle-password {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color: #007bff;
-  font-size: 14px;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 14px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-.login-container button:hover {
-  background-color: #218838;
-}
-
-.login-container .footer {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #666;
-}
-
-.login-container .footer a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.login-container .footer a:hover {
-  text-decoration: underline;
-}
-
+    }
+    .login-container {
+      background-color: rgba(225,225,226,0.3);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      max-width: 400px;
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    .password-container {
+      position: relative;
+    }
+    .toggle-password {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #007bff;
+      font-size: 14px;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+    .login-container button:hover {
+      background-color: #218838;
+    }
+    .login-container .footer {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    .login-container .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .login-container .footer a:hover {
+      text-decoration: underline;
+    }
   </style> 
- </head> 
- <body> 
+</head> 
+<body> 
   <div class="login-container"> 
-   <h2>Login</h2> 
-   <form id="loginForm"> 
-    <input type="text" placeholder="Username" name="username" id="username" required> 
-    <div class="password-container"> 
-     <input type="password" placeholder="Password" name="password" id="password" required> <span class="toggle-password" onclick="togglePassword()">Lihat</span> 
-    </div> <button type="submit">Login</button> 
-   </form> 
+    <h2>Login</h2> 
+    <form id="loginForm"> 
+      <input type="text" placeholder="Username" name="username" id="username" required> 
+      <div class="password-container"> 
+        <input type="password" placeholder="Password" name="password" id="password" required> 
+        <span class="toggle-password" onclick="togglePassword()">Lihat</span> 
+      </div> 
+      <button type="submit">Login</button> 
+    </form> 
   </div> 
+
   <script>
     function togglePassword() {
       const passwordInput = document.getElementById('password');
@@ -121,17 +115,17 @@
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
 
-      // Ganti nilai ini dengan username dan password yang kamu inginkan
       const validUsername = 'DhafaNikita';
       const validPassword = '12-08';
 
       if (username === validUsername && password === validPassword) {
         alert('Login berhasil!');
-        // Redirect ke halaman lain kalau perlu
+        // 🔗 Ganti URL di bawah sesuai dengan URL GitHub Pages repo 'selamat-datang'
+        window.location.href = 'https://dhafa27.github.io/nikta-sayang/';
       } else {
         alert('Username atau password salah.');
       }
     });
   </script> 
- </body>
+</body>
 </html>
